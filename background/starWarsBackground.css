@@ -1,0 +1,5 @@
+body {
+    background-image: url("/images/backgroundImageStar.jpeg");
+    background-position-y: inherit;
+    background-color: black;
+}

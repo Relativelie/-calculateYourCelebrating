@@ -1,0 +1,171 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* CHOOSE YOUR OWN PAGE */
+.homeButtonBlock {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
+}
+
+.homeBtn {
+  position: relative;
+    background-image: url(images/homeicon.png);
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover ;
+    cursor: pointer;
+  }
+  .homeBtn:hover {
+    bottom: 5px;
+  }
+
+  /* CHOOSE DATE */
+.chooseDate {
+  display: flex;
+  justify-content: center;
+}
+
+  .chooseDate label {
+    font-size: 45px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: #fff;
+    margin-right: 30px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .chooseDate input {
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  /* CALCULATE VALUE BLOCK */
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .calculateValueBlock h2 {
+    font-size: 150px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 0 0 16px rgb(213, 250, 255);
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .calculateValueBlock h3{
+    font-size: 50px;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+  }
+
+  .valueItem h2 {
+
+    height: 200px;
+  }
+
+  .calculateValueBlock {
+    width: 253px;
+  }
+
+  /* NEW YEAR */
+
+.chooseDate h3 {
+  font-size: 100px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 10px;
+  text-shadow: 0 0 10px #fff;
+}
+
+.newYear h3, .NewYearCalculateValue h2 {
+  background-image: url(images/textBackground1.jpeg);
+}
+
+.valentinesDay h3, .valentinesCalculateValue h2 {
+  background-image: url(images/textBackgroundValentines.jpeg);
+}
+
+.newYear h3, .NewYearCalculateValue h2, .valentinesCalculateValue h2, .valentinesDay h3 {
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+.calculateValueBlock h2 {
+  margin: 0 !important;
+}
+
+/* STAR WARS */
+.starWars h3 {
+  color: #fff;
+  text-shadow: 0 0 20px rgb(255, 104, 104);
+  text-align: center;
+  line-height: 1;
+}
+
+
+.starWars h2 {
+  text-shadow:  0 0 10px rgb(248, 100, 100);
+}
+
+  @media all and (max-width: 826px) {
+    body {
+      background-size: inherit;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    .valueItem h2 {
+      margin: 50px;
+    }
+
+    .chooseDate {
+      margin-top: 80px;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+
+    .valueItem h2 {
+      font-size: 60px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 40px black;
+    }
+
+    .valueItem h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .chooseDate {
+      margin-top: 80px;
+    }
+
+    .chooseDate {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chooseDate label {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
