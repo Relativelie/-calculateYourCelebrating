@@ -74,6 +74,7 @@
   font-size: 40px;
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .card p {
@@ -135,3 +136,65 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+@media all and (max-width: 915px) {
+  .carousel-item img {
+    margin-top: 0%;
+  }
+
+  .searchCelebration input {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+.headerText {
+  padding: 25px 0 0 0;
+}
+
+  .headerText h1 {
+    font-size: 40px;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+}
+
+
+@media all and (max-width: 450px) {
+  .headerText h1 {
+    font-size: 30px;
+  }
+
+  .card-body h5 {
+    font-size: 25px;
+  }
+  
+  .carousel-inner {
+    height: 200px;
+  }
+
+  .card-body p {
+    font-size: 20px;
+  }
+
+  .card-body .btn {
+    font-size: 15px;
+  }
+  }
+
+
+
+  @media all and (max-width: 300px) {
+
+    .headerText h1 {
+      font-size: 20px;
+    }
+    
+      .carousel-inner {
+        height: 150px;
+      }
+    }
