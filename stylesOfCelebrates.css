@@ -121,10 +121,70 @@ body {
   line-height: 1;
 }
 
-
 .starWars h2 {
   text-shadow:  0 0 10px rgb(248, 100, 100);
 }
+
+
+/* CHOOSE YOUR OWN DATE ADVICE*/
+  .adviceBlock {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .adviceTextBlock {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.239);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  .adviceTextBlock button {
+    border-radius: 10px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    border: none;
+    background-color: rgb(255, 180, 83);
+    padding: 10px 20px 10px 20px;
+    animation: borderShine;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite; 
+    animation-direction: alternate;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+
+  @keyframes borderShine {
+    0% {
+      box-shadow: none;
+    }
+  
+    100% {
+      box-shadow: 0 0 5px rgba(248, 208, 77, 0.719), 0 0 10px rgb(255, 255, 255);   
+    }
+  }
+
+  .adviceTextBlock button:hover {
+    animation: none;
+ }
+
+  .advice {
+    height: 150px;
+    font-size: 46px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+  }
+
+
+
 
   @media all and (max-width: 826px) {
     body {

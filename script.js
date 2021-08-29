@@ -93,3 +93,15 @@ function calculateDaysBeforeCelebrateDay() {
 let timerOn = setInterval(calculateDaysBeforeCelebrateDay, 1000);
 
 
+// CHOOSE ADVICE
+const adviceButton = document.querySelector(".adviceTextBlock button");
+adviceButton.addEventListener("click", getAdvice)
+
+async function getAdvice() {
+    const result = await fetch("https://api.adviceslip.com/advice");
+    const resultReceived = await result.json();
+    document.querySelector(".advice").textContent = resultReceived.slip.advice;
+    console.log(resultReceived.slip.advice)
+}
+
+

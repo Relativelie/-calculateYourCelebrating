@@ -137,6 +137,7 @@
   flex-wrap: wrap;
 }
 
+
 @media all and (max-width: 915px) {
   .carousel-item img {
     margin-top: 0%;
